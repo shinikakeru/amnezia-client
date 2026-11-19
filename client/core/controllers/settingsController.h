@@ -82,6 +82,9 @@ public:
     bool isDevGatewayEnv() const;
     void toggleDevGatewayEnv(bool enabled);
 
+    bool isHideSelfHostedIpEnabled() const;
+    void toggleHideSelfHostedIp(bool enable);
+
     bool isHomeAdLabelVisible() const;
     void disableHomeAdLabel();
 
