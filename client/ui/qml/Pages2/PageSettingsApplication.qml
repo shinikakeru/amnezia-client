@@ -13,22 +13,6 @@ import "../Components"
 PageType {
     id: root
 
-    function syncHideSelfHostedIp() {
-        const enabled = SettingsController.isHideSelfHostedIpEnabled()
-        if (switcherHideSelfHostedIp.checked !== enabled) {
-            switcherHideSelfHostedIp.checked = enabled
-        }
-    }
-    Component.onCompleted: {
-        syncHideSelfHostedIp()
-    }
-
-    onVisibleChanged: {
-        if (visible) {
-            syncHideSelfHostedIp()
-        }
-    }
-
     FlickableType {
         id: flickable
 
@@ -209,12 +193,11 @@ PageType {
 
                         focusPolicy: Qt.NoFocus
 
+                        checked: SettingsController.isHideSelfHostedIpEnabled()
                         onToggled: function() {
-                            const nextState = checked
-                            if (nextState !== SettingsController.isHideSelfHostedIpEnabled()) {
-                                SettingsController.toggleHideSelfHostedIp(nextState)
+                            if (checked !== SettingsController.isHideSelfHostedIpEnabled()) {
+                                SettingsController.toggleHideSelfHostedIp(checked)
                             }
-                            switcherHideSelfHostedIp.checked = SettingsController.isHideSelfHostedIpEnabled()
                         }
                     }
                 }
