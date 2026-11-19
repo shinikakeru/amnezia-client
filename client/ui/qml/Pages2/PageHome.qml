@@ -17,7 +17,8 @@ import "../Components"
 
 PageType {
     id: root
-
+    
+    property bool isIpVisible: false
     property var apiAvailableProtocols: []
     property string apiCurrentProtocol: ""
 
@@ -275,6 +276,7 @@ PageType {
             anchors.right: parent.right
 
             expanded: false
+            isIpVisible: root.isIpVisible
             pressed: collapsedBarMouseArea.pressed
             outdatedWarningVisible: root.isOutdatedAwgWarningVisible
             protocolSelectionVisible: root.isApiProtocolSelectionVisible
@@ -284,6 +286,7 @@ PageType {
             onExpandRequested: drawer.open()
             onServerInfoRequested: root.openServerInfo()
             onProtocolSelectionRequested: root.openProtocolSelection()
+            onToggleIpVisibilityRequested: root.isIpVisible = !root.isIpVisible
         }
     }
 
@@ -306,12 +309,14 @@ PageType {
                 anchors.right: parent.right
 
                 expanded: true
+                isIpVisible: root.isIpVisible
                 protocolSelectionVisible: root.isApiProtocolSelectionVisible
                 protocolSelectable: root.apiAvailableProtocols.length > 1
                 protocolText: root.protocolDisplayName(root.apiAvailableProtocols.length > 1 ? root.apiCurrentProtocol : root.apiAvailableProtocols[0])
 
                 onServerInfoRequested: root.openServerInfo()
                 onProtocolSelectionRequested: root.openProtocolSelection()
+                onToggleIpVisibilityRequested: root.isIpVisible = !root.isIpVisible
             }
 
             ColumnLayout {
