@@ -175,7 +175,7 @@ PageType {
                     }
                 }
 
-                ListItemType {
+               ListItemType {
                     id: switcherHideSelfHostedIpRow
 
                     Layout.fillWidth: true
@@ -195,10 +195,10 @@ PageType {
 
                         focusPolicy: Qt.NoFocus
 
-                        checked: SettingsController.hideSelfHostedIp
+                        checked: SettingsController.isHideSelfHostedIpEnabled()
                         onToggled: function() {
-                            if (checked !== SettingsController.hideSelfHostedIp) {
-                                SettingsController.hideSelfHostedIp = checked
+                            if (checked !== SettingsController.isHideSelfHostedIpEnabled()) {
+                                SettingsController.toggleHideSelfHostedIp(checked)
                             }
                         }
                     }
