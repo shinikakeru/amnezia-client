@@ -13,6 +13,15 @@ import "../Components"
 PageType {
     id: root
 
+    onVisibleChanged: {
+        if (visible) {
+            const enabled = SettingsController.isHideSelfHostedIpEnabled()
+            if (switcherHideSelfHostedIp.checked !== enabled) {
+                switcherHideSelfHostedIp.checked = enabled
+            }
+        }
+    }
+
     FlickableType {
         id: flickable
 
@@ -174,7 +183,7 @@ PageType {
                     }
                 }
 
-               ListItemType {
+                ListItemType {
                     id: switcherHideSelfHostedIpRow
 
                     Layout.fillWidth: true
@@ -193,7 +202,6 @@ PageType {
 
                         focusPolicy: Qt.NoFocus
 
-                        checked: SettingsController.isHideSelfHostedIpEnabled()
                         onToggled: function() {
                             if (checked !== SettingsController.isHideSelfHostedIpEnabled()) {
                                 SettingsController.toggleHideSelfHostedIp(checked)
