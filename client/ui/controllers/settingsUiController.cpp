@@ -206,6 +206,16 @@ void SettingsUiController::toggleScreenshotsEnabled(bool enable)
     m_settingsController->toggleScreenshotsEnabled(enable);
 }
 
+bool SettingsUiController::isHideSelfHostedIpEnabled()
+{
+    return m_settingsController->isHideSelfHostedIpEnabled();
+}
+
+void SettingsUiController::toggleHideSelfHostedIp(bool enable)
+{
+    m_settingsController->toggleHideSelfHostedIp(enable);
+}
+
 bool SettingsUiController::isNewsNotificationsEnabled()
 {
     return m_settingsController->isNewsNotificationsEnabled();
