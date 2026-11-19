@@ -8,7 +8,7 @@ import "../Controls2/TextTypes"
 
 ColumnLayout {
     id: root
-    
+
     property bool isIpVisible: false
     signal toggleIpVisibilityRequested()
     property bool expanded: false
@@ -22,7 +22,6 @@ ColumnLayout {
     signal serverInfoRequested()
     signal protocolSelectionRequested()
 
-
     spacing: 0
 
     RowLayout {
@@ -33,18 +32,19 @@ ColumnLayout {
 
         spacing: 10
 
-        HITextType {
-        Layout.maximumWidth: root.width - 32 - (chevron.visible ? chevron.width + 10 : 0)
-        maximumLineCount: 1
-        wrapMode: Text.NoWrap
-        elide: Text.ElideRight
-    
-        text: root.isIpVisible ? ServersUiController.defaultServerName : "***.***.***.***"
-        horizontalAlignment: Text.AlignHCenter
-    
-        MouseArea {
-            anchors.fill: parent
-            cursorShape: Qt.PointingHandCursor
+        H1TextType {
+            Layout.maximumWidth: root.width - 32 - (chevron.visible ? chevron.width + 10 : 0)
+
+            maximumLineCount: 1
+            wrapMode: Text.NoWrap
+            elide: Qt.ElideRight
+
+            text: root.isIpVisible ? ServersUiController.defaultServerName : "***.***.***.***"
+            horizontalAlignment: Text.AlignHCenter
+
+            MouseArea {
+                anchors.fill: parent
+                cursorShape: Qt.PointingHandCursor
                 onClicked: root.toggleIpVisibilityRequested()
             }
         }
