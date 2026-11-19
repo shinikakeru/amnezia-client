@@ -515,7 +515,7 @@
 <context>
     <name>HomeServerSummary</name>
     <message>
-        <location filename="../ui/qml/Components/HomeServerSummary.qml" line="91"/>
+        <location filename="../ui/qml/Components/HomeServerSummary.qml" line="124"/>
         <source>AmneziaWG 2.0 is outdated and no longer supported. Continued use requires a fresh installation of the AmneziaWG 3.1 container.</source>
         <translation>AmneziaWG 2.0 เป็นเวอร์ชันเก่าและไม่ได้รับการสนับสนุนแล้ว หากต้องการใช้งานต่อ จำเป็นต้องติดตั้งคอนเทนเนอร์ AmneziaWG 3.1 ใหม่</translation>
     </message>
@@ -850,55 +850,55 @@ Already installed containers were found on the server. All installed containers 
 <context>
     <name>PageHome</name>
     <message>
-        <location filename="../ui/qml/Pages2/PageHome.qml" line="121"/>
+        <location filename="../ui/qml/Pages2/PageHome.qml" line="137"/>
         <source>Logging enabled</source>
         <translation>เปิดใช้งานการบันทึกแล้ว</translation>
     </message>
     <message>
-        <location filename="../ui/qml/Pages2/PageHome.qml" line="137"/>
+        <location filename="../ui/qml/Pages2/PageHome.qml" line="153"/>
         <source>Dev gateway enabled</source>
         <translation>เปิดใช้งานเกตเวย์สำหรับนักพัฒนาแล้ว</translation>
     </message>
     <message>
-        <location filename="../ui/qml/Pages2/PageHome.qml" line="171"/>
+        <location filename="../ui/qml/Pages2/PageHome.qml" line="187"/>
         <source>Split tunneling enabled</source>
         <translation>เปิดใช้งานการแบ่งทาเนลแล้ว</translation>
     </message>
     <message>
-        <location filename="../ui/qml/Pages2/PageHome.qml" line="171"/>
+        <location filename="../ui/qml/Pages2/PageHome.qml" line="187"/>
         <source>Split tunneling disabled</source>
         <translation>ปิดใช้งานการแบ่งทาเนลแล้ว</translation>
     </message>
     <message>
-        <location filename="../ui/qml/Pages2/PageHome.qml" line="398"/>
+        <location filename="../ui/qml/Pages2/PageHome.qml" line="418"/>
         <source>Select an installed protocol or add a new one</source>
         <translation>เลือกโปรโตคอลที่ติดตั้งไว้หรือเพิ่มโปรโตคอลใหม่</translation>
     </message>
     <message>
-        <location filename="../ui/qml/Pages2/PageHome.qml" line="60"/>
+        <location filename="../ui/qml/Pages2/PageHome.qml" line="68"/>
         <source>Unable change protocol while trying to make an active connection</source>
         <translation>ไม่สามารถเปลี่ยนโปรโตคอลได้ขณะพยายามเชื่อมต่อ</translation>
     </message>
     <message>
-        <location filename="../ui/qml/Pages2/PageHome.qml" line="64"/>
-        <location filename="../ui/qml/Pages2/PageHome.qml" line="514"/>
+        <location filename="../ui/qml/Pages2/PageHome.qml" line="72"/>
+        <location filename="../ui/qml/Pages2/PageHome.qml" line="534"/>
         <source>Cannot change protocol during active connection</source>
         <translation>ไม่สามารถเปลี่ยนโปรโตคอลระหว่างการเชื่อมต่อที่ใช้งานอยู่ได้</translation>
     </message>
     <message>
-        <location filename="../ui/qml/Pages2/PageHome.qml" line="384"/>
-        <location filename="../ui/qml/Pages2/PageHome.qml" line="465"/>
+        <location filename="../ui/qml/Pages2/PageHome.qml" line="404"/>
+        <location filename="../ui/qml/Pages2/PageHome.qml" line="485"/>
         <source>Back</source>
         <translation>ย้อนกลับ</translation>
     </message>
     <message>
-        <location filename="../ui/qml/Pages2/PageHome.qml" line="397"/>
-        <location filename="../ui/qml/Pages2/PageHome.qml" line="480"/>
+        <location filename="../ui/qml/Pages2/PageHome.qml" line="417"/>
+        <location filename="../ui/qml/Pages2/PageHome.qml" line="500"/>
         <source>VPN protocol</source>
         <translation>โปรโตคอล VPN</translation>
     </message>
     <message>
-        <location filename="../ui/qml/Pages2/PageHome.qml" line="347"/>
+        <location filename="../ui/qml/Pages2/PageHome.qml" line="367"/>
         <source>Servers</source>
         <translation>เซิร์ฟเวอร์</translation>
     </message>
@@ -4133,112 +4133,122 @@ Create one from the current settings.</source>
         <translation>อนุญาตให้แอปพลิเคชันถ่ายภาพหน้าจอ</translation>
     </message>
     <message>
-        <location filename="../ui/qml/Pages2/PageSettingsApplication.qml" line="81"/>
+        <location filename="../ui/qml/Pages2/PageSettingsApplication.qml" line="80"/>
         <source>Enable notifications</source>
         <translation>เปิดใช้งานการแจ้งเตือน</translation>
     </message>
     <message>
-        <location filename="../ui/qml/Pages2/PageSettingsApplication.qml" line="82"/>
+        <location filename="../ui/qml/Pages2/PageSettingsApplication.qml" line="81"/>
         <source>Enable notifications to show the VPN state in the status bar</source>
         <translation>เปิดใช้งานการแจ้งเตือนเพื่อแสดงสถานะ VPN ในแถบสถานะ</translation>
     </message>
     <message>
-        <location filename="../ui/qml/Pages2/PageSettingsApplication.qml" line="97"/>
+        <location filename="../ui/qml/Pages2/PageSettingsApplication.qml" line="96"/>
         <source>Auto start</source>
         <translation>เริ่มทำงานอัตโนมัติ</translation>
     </message>
     <message>
-        <location filename="../ui/qml/Pages2/PageSettingsApplication.qml" line="98"/>
+        <location filename="../ui/qml/Pages2/PageSettingsApplication.qml" line="97"/>
         <source>Launch the application every time the device is starts</source>
         <translation>เปิดแอปพลิเคชันทุกครั้งที่อุปกรณ์เริ่มทำงาน</translation>
     </message>
     <message>
-        <location filename="../ui/qml/Pages2/PageSettingsApplication.qml" line="126"/>
+        <location filename="../ui/qml/Pages2/PageSettingsApplication.qml" line="125"/>
         <source>Auto connect</source>
         <translation>เชื่อมต่ออัตโนมัติ</translation>
     </message>
     <message>
-        <location filename="../ui/qml/Pages2/PageSettingsApplication.qml" line="127"/>
+        <location filename="../ui/qml/Pages2/PageSettingsApplication.qml" line="126"/>
         <source>Connect to VPN on app start</source>
         <translation>เชื่อมต่อ VPN เมื่อเริ่มแอปพลิเคชัน</translation>
     </message>
     <message>
-        <location filename="../ui/qml/Pages2/PageSettingsApplication.qml" line="156"/>
+        <location filename="../ui/qml/Pages2/PageSettingsApplication.qml" line="155"/>
         <source>Start minimized</source>
         <translation>เริ่มในโหมดย่อ</translation>
     </message>
     <message>
-        <location filename="../ui/qml/Pages2/PageSettingsApplication.qml" line="157"/>
+        <location filename="../ui/qml/Pages2/PageSettingsApplication.qml" line="156"/>
         <source>Launch application minimized (works with autostart option turned on)</source>
         <translation>เปิดแอปพลิเคชันแบบย่อ (ใช้ได้เมื่อเปิดตัวเลือกเริ่มอัตโนมัติ)</translation>
     </message>
     <message>
+        <location filename="../ui/qml/Pages2/PageSettingsApplication.qml" line="184"/>
+        <source>Hide IP for self-hosted servers</source>
+        <translation>ซ่อน IP สำหรับเซิร์ฟเวอร์ส่วนตัว</translation>
+    </message>
+    <message>
         <location filename="../ui/qml/Pages2/PageSettingsApplication.qml" line="185"/>
+        <source>Mask server IP address on the home screen</source>
+        <translation>ซ่อนที่อยู่ IP ของเซิร์ฟเวอร์บนหน้าจอหลัก</translation>
+    </message>
+    <message>
+        <location filename="../ui/qml/Pages2/PageSettingsApplication.qml" line="212"/>
         <source>News Notification</source>
         <translation>การแจ้งเตือนข่าวสาร</translation>
     </message>
     <message>
-        <location filename="../ui/qml/Pages2/PageSettingsApplication.qml" line="186"/>
+        <location filename="../ui/qml/Pages2/PageSettingsApplication.qml" line="213"/>
         <source>Show a notification icon for unread news</source>
         <translation>แสดงไอคอนแจ้งเตือนสำหรับข่าวสารที่ยังไม่ได้อ่าน</translation>
     </message>
     <message>
-        <location filename="../ui/qml/Pages2/PageSettingsApplication.qml" line="212"/>
+        <location filename="../ui/qml/Pages2/PageSettingsApplication.qml" line="239"/>
         <source>Check for updates automatically</source>
         <translation>ตรวจหาการอัปเดตอัตโนมัติ</translation>
     </message>
     <message>
-        <location filename="../ui/qml/Pages2/PageSettingsApplication.qml" line="213"/>
+        <location filename="../ui/qml/Pages2/PageSettingsApplication.qml" line="240"/>
         <source>Check for a new app version at startup</source>
         <translation>ตรวจหาเวอร์ชันแอปพลิเคชันใหม่เมื่อเริ่มทำงาน</translation>
     </message>
     <message>
-        <location filename="../ui/qml/Pages2/PageSettingsApplication.qml" line="239"/>
+        <location filename="../ui/qml/Pages2/PageSettingsApplication.qml" line="266"/>
         <source>Language</source>
         <translation>ภาษา</translation>
     </message>
     <message>
-        <location filename="../ui/qml/Pages2/PageSettingsApplication.qml" line="253"/>
+        <location filename="../ui/qml/Pages2/PageSettingsApplication.qml" line="280"/>
         <source>Logging</source>
         <translation>การบันทึก</translation>
     </message>
     <message>
-        <location filename="../ui/qml/Pages2/PageSettingsApplication.qml" line="254"/>
+        <location filename="../ui/qml/Pages2/PageSettingsApplication.qml" line="281"/>
         <source>Enabled</source>
         <translation>เปิดใช้งาน</translation>
     </message>
     <message>
-        <location filename="../ui/qml/Pages2/PageSettingsApplication.qml" line="254"/>
+        <location filename="../ui/qml/Pages2/PageSettingsApplication.qml" line="281"/>
         <source>Disabled</source>
         <translation>ปิดใช้งาน</translation>
     </message>
     <message>
-        <location filename="../ui/qml/Pages2/PageSettingsApplication.qml" line="267"/>
+        <location filename="../ui/qml/Pages2/PageSettingsApplication.qml" line="294"/>
         <source>Reset settings and remove all data from the application</source>
         <translation>รีเซ็ตการตั้งค่าและลบข้อมูลทั้งหมดออกจากแอปพลิเคชัน</translation>
     </message>
     <message>
-        <location filename="../ui/qml/Pages2/PageSettingsApplication.qml" line="273"/>
+        <location filename="../ui/qml/Pages2/PageSettingsApplication.qml" line="300"/>
         <source>Reset settings and remove all data from the application?</source>
         <translation>รีเซ็ตการตั้งค่าและลบข้อมูลทั้งหมดออกจากแอปพลิเคชันหรือไม่?</translation>
     </message>
     <message>
-        <location filename="../ui/qml/Pages2/PageSettingsApplication.qml" line="274"/>
+        <location filename="../ui/qml/Pages2/PageSettingsApplication.qml" line="301"/>
         <source>All settings will be reset to default. All installed AmneziaVPN services will still remain on the server.</source>
         <translation>การตั้งค่าทั้งหมดจะถูกรีเซ็ตเป็นค่าเริ่มต้น บริการ AmneziaVPN ที่ติดตั้งทั้งหมดจะยังคงอยู่บนเซิร์ฟเวอร์</translation>
     </message>
     <message>
-        <location filename="../ui/qml/Pages2/PageSettingsApplication.qml" line="275"/>
+        <location filename="../ui/qml/Pages2/PageSettingsApplication.qml" line="302"/>
         <source>Continue</source>
         <translation>ดำเนินการต่อ</translation>
     </message>
     <message>
-        <location filename="../ui/qml/Pages2/PageSettingsApplication.qml" line="276"/>
+        <location filename="../ui/qml/Pages2/PageSettingsApplication.qml" line="303"/>
         <source>Cancel</source>
         <translation>ยกเลิก</translation>
     </message>
     <message>
-        <location filename="../ui/qml/Pages2/PageSettingsApplication.qml" line="280"/>
+        <location filename="../ui/qml/Pages2/PageSettingsApplication.qml" line="307"/>
         <source>Cannot reset settings during active connection</source>
         <translation>ไม่สามารถรีเซ็ตการตั้งค่าระหว่างการเชื่อมต่อที่ใช้งานอยู่ได้</translation>
     </message>

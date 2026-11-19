@@ -515,7 +515,7 @@
 <context>
     <name>HomeServerSummary</name>
     <message>
-        <location filename="../ui/qml/Components/HomeServerSummary.qml" line="91"/>
+        <location filename="../ui/qml/Components/HomeServerSummary.qml" line="124"/>
         <source>AmneziaWG 2.0 is outdated and no longer supported. Continued use requires a fresh installation of the AmneziaWG 3.1 container.</source>
         <translation>AmneziaWG 2.0은 오래되어 더 이상 지원되지 않습니다. 계속 사용하려면 AmneziaWG 3.1 컨테이너를 새로 설치해야 합니다.</translation>
     </message>
@@ -850,55 +850,55 @@ Already installed containers were found on the server. All installed containers 
 <context>
     <name>PageHome</name>
     <message>
-        <location filename="../ui/qml/Pages2/PageHome.qml" line="121"/>
+        <location filename="../ui/qml/Pages2/PageHome.qml" line="137"/>
         <source>Logging enabled</source>
         <translation>로깅 활성화됨</translation>
     </message>
     <message>
-        <location filename="../ui/qml/Pages2/PageHome.qml" line="137"/>
+        <location filename="../ui/qml/Pages2/PageHome.qml" line="153"/>
         <source>Dev gateway enabled</source>
         <translation>Dev gateway enabled</translation>
     </message>
     <message>
-        <location filename="../ui/qml/Pages2/PageHome.qml" line="171"/>
+        <location filename="../ui/qml/Pages2/PageHome.qml" line="187"/>
         <source>Split tunneling enabled</source>
         <translation>분할 터널링 활성화됨</translation>
     </message>
     <message>
-        <location filename="../ui/qml/Pages2/PageHome.qml" line="171"/>
+        <location filename="../ui/qml/Pages2/PageHome.qml" line="187"/>
         <source>Split tunneling disabled</source>
         <translation>분할 터널링 비활성화됨</translation>
     </message>
     <message>
-        <location filename="../ui/qml/Pages2/PageHome.qml" line="398"/>
+        <location filename="../ui/qml/Pages2/PageHome.qml" line="418"/>
         <source>Select an installed protocol or add a new one</source>
         <translation>설치된 프로토콜을 선택하거나 새 프로토콜을 추가하세요</translation>
     </message>
     <message>
-        <location filename="../ui/qml/Pages2/PageHome.qml" line="60"/>
+        <location filename="../ui/qml/Pages2/PageHome.qml" line="68"/>
         <source>Unable change protocol while trying to make an active connection</source>
         <translation>연결을 시도하는 동안에는 프로토콜을 변경할 수 없습니다</translation>
     </message>
     <message>
-        <location filename="../ui/qml/Pages2/PageHome.qml" line="64"/>
-        <location filename="../ui/qml/Pages2/PageHome.qml" line="514"/>
+        <location filename="../ui/qml/Pages2/PageHome.qml" line="72"/>
+        <location filename="../ui/qml/Pages2/PageHome.qml" line="534"/>
         <source>Cannot change protocol during active connection</source>
         <translation>연결이 활성화된 동안에는 프로토콜을 변경할 수 없습니다</translation>
     </message>
     <message>
-        <location filename="../ui/qml/Pages2/PageHome.qml" line="384"/>
-        <location filename="../ui/qml/Pages2/PageHome.qml" line="465"/>
+        <location filename="../ui/qml/Pages2/PageHome.qml" line="404"/>
+        <location filename="../ui/qml/Pages2/PageHome.qml" line="485"/>
         <source>Back</source>
         <translation>뒤로</translation>
     </message>
     <message>
-        <location filename="../ui/qml/Pages2/PageHome.qml" line="397"/>
-        <location filename="../ui/qml/Pages2/PageHome.qml" line="480"/>
+        <location filename="../ui/qml/Pages2/PageHome.qml" line="417"/>
+        <location filename="../ui/qml/Pages2/PageHome.qml" line="500"/>
         <source>VPN protocol</source>
         <translation>VPN 프로토콜</translation>
     </message>
     <message>
-        <location filename="../ui/qml/Pages2/PageHome.qml" line="347"/>
+        <location filename="../ui/qml/Pages2/PageHome.qml" line="367"/>
         <source>Servers</source>
         <translation>서버</translation>
     </message>
@@ -4133,112 +4133,122 @@ Create one from the current settings.</source>
         <translation>애플리케이션 스크린샷 허용</translation>
     </message>
     <message>
-        <location filename="../ui/qml/Pages2/PageSettingsApplication.qml" line="81"/>
+        <location filename="../ui/qml/Pages2/PageSettingsApplication.qml" line="80"/>
         <source>Enable notifications</source>
         <translation>알림 사용</translation>
     </message>
     <message>
-        <location filename="../ui/qml/Pages2/PageSettingsApplication.qml" line="82"/>
+        <location filename="../ui/qml/Pages2/PageSettingsApplication.qml" line="81"/>
         <source>Enable notifications to show the VPN state in the status bar</source>
         <translation>상태 표시줄에 VPN 상태를 표시하도록 알림을 사용합니다</translation>
     </message>
     <message>
-        <location filename="../ui/qml/Pages2/PageSettingsApplication.qml" line="97"/>
+        <location filename="../ui/qml/Pages2/PageSettingsApplication.qml" line="96"/>
         <source>Auto start</source>
         <translation>자동 시작</translation>
     </message>
     <message>
-        <location filename="../ui/qml/Pages2/PageSettingsApplication.qml" line="98"/>
+        <location filename="../ui/qml/Pages2/PageSettingsApplication.qml" line="97"/>
         <source>Launch the application every time the device is starts</source>
         <translation>기기가 시작될 때마다 애플리케이션을 실행합니다</translation>
     </message>
     <message>
-        <location filename="../ui/qml/Pages2/PageSettingsApplication.qml" line="126"/>
+        <location filename="../ui/qml/Pages2/PageSettingsApplication.qml" line="125"/>
         <source>Auto connect</source>
         <translation>자동 연결</translation>
     </message>
     <message>
-        <location filename="../ui/qml/Pages2/PageSettingsApplication.qml" line="127"/>
+        <location filename="../ui/qml/Pages2/PageSettingsApplication.qml" line="126"/>
         <source>Connect to VPN on app start</source>
         <translation>앱 시작 시 VPN에 연결합니다</translation>
     </message>
     <message>
-        <location filename="../ui/qml/Pages2/PageSettingsApplication.qml" line="156"/>
+        <location filename="../ui/qml/Pages2/PageSettingsApplication.qml" line="155"/>
         <source>Start minimized</source>
         <translation>최소화 상태로 시작</translation>
     </message>
     <message>
-        <location filename="../ui/qml/Pages2/PageSettingsApplication.qml" line="157"/>
+        <location filename="../ui/qml/Pages2/PageSettingsApplication.qml" line="156"/>
         <source>Launch application minimized (works with autostart option turned on)</source>
         <translation>애플리케이션을 최소화 상태로 실행합니다(자동 시작 옵션이 켜져 있어야 함)</translation>
     </message>
     <message>
+        <location filename="../ui/qml/Pages2/PageSettingsApplication.qml" line="184"/>
+        <source>Hide IP for self-hosted servers</source>
+        <translation>자체 호스팅 서버 IP 숨기기</translation>
+    </message>
+    <message>
         <location filename="../ui/qml/Pages2/PageSettingsApplication.qml" line="185"/>
+        <source>Mask server IP address on the home screen</source>
+        <translation>홈 화면에서 서버 IP 주소 숨기기</translation>
+    </message>
+    <message>
+        <location filename="../ui/qml/Pages2/PageSettingsApplication.qml" line="212"/>
         <source>News Notification</source>
         <translation>뉴스 알림</translation>
     </message>
     <message>
-        <location filename="../ui/qml/Pages2/PageSettingsApplication.qml" line="186"/>
+        <location filename="../ui/qml/Pages2/PageSettingsApplication.qml" line="213"/>
         <source>Show a notification icon for unread news</source>
         <translation>읽지 않은 뉴스가 있으면 알림 아이콘을 표시합니다</translation>
     </message>
     <message>
-        <location filename="../ui/qml/Pages2/PageSettingsApplication.qml" line="212"/>
+        <location filename="../ui/qml/Pages2/PageSettingsApplication.qml" line="239"/>
         <source>Check for updates automatically</source>
         <translation>자동으로 업데이트 확인</translation>
     </message>
     <message>
-        <location filename="../ui/qml/Pages2/PageSettingsApplication.qml" line="213"/>
+        <location filename="../ui/qml/Pages2/PageSettingsApplication.qml" line="240"/>
         <source>Check for a new app version at startup</source>
         <translation>시작할 때 새 앱 버전을 확인합니다</translation>
     </message>
     <message>
-        <location filename="../ui/qml/Pages2/PageSettingsApplication.qml" line="239"/>
+        <location filename="../ui/qml/Pages2/PageSettingsApplication.qml" line="266"/>
         <source>Language</source>
         <translation>언어</translation>
     </message>
     <message>
-        <location filename="../ui/qml/Pages2/PageSettingsApplication.qml" line="253"/>
+        <location filename="../ui/qml/Pages2/PageSettingsApplication.qml" line="280"/>
         <source>Logging</source>
         <translation>로그 기록</translation>
     </message>
     <message>
-        <location filename="../ui/qml/Pages2/PageSettingsApplication.qml" line="254"/>
+        <location filename="../ui/qml/Pages2/PageSettingsApplication.qml" line="281"/>
         <source>Enabled</source>
         <translation>사용</translation>
     </message>
     <message>
-        <location filename="../ui/qml/Pages2/PageSettingsApplication.qml" line="254"/>
+        <location filename="../ui/qml/Pages2/PageSettingsApplication.qml" line="281"/>
         <source>Disabled</source>
         <translation>사용 안 함</translation>
     </message>
     <message>
-        <location filename="../ui/qml/Pages2/PageSettingsApplication.qml" line="267"/>
+        <location filename="../ui/qml/Pages2/PageSettingsApplication.qml" line="294"/>
         <source>Reset settings and remove all data from the application</source>
         <translation>설정을 초기화하고 애플리케이션의 모든 데이터 삭제</translation>
     </message>
     <message>
-        <location filename="../ui/qml/Pages2/PageSettingsApplication.qml" line="273"/>
+        <location filename="../ui/qml/Pages2/PageSettingsApplication.qml" line="300"/>
         <source>Reset settings and remove all data from the application?</source>
         <translation>설정을 초기화하고 애플리케이션의 모든 데이터를 삭제하시겠습니까?</translation>
     </message>
     <message>
-        <location filename="../ui/qml/Pages2/PageSettingsApplication.qml" line="274"/>
+        <location filename="../ui/qml/Pages2/PageSettingsApplication.qml" line="301"/>
         <source>All settings will be reset to default. All installed AmneziaVPN services will still remain on the server.</source>
         <translation>모든 설정이 기본값으로 초기화됩니다. 설치된 AmneziaVPN 서비스는 서버에 그대로 유지됩니다.</translation>
     </message>
     <message>
-        <location filename="../ui/qml/Pages2/PageSettingsApplication.qml" line="275"/>
+        <location filename="../ui/qml/Pages2/PageSettingsApplication.qml" line="302"/>
         <source>Continue</source>
         <translation>계속</translation>
     </message>
     <message>
-        <location filename="../ui/qml/Pages2/PageSettingsApplication.qml" line="276"/>
+        <location filename="../ui/qml/Pages2/PageSettingsApplication.qml" line="303"/>
         <source>Cancel</source>
         <translation>취소</translation>
     </message>
     <message>
-        <location filename="../ui/qml/Pages2/PageSettingsApplication.qml" line="280"/>
+        <location filename="../ui/qml/Pages2/PageSettingsApplication.qml" line="307"/>
         <source>Cannot reset settings during active connection</source>
         <translation>연결된 상태에서는 설정을 초기화할 수 없습니다</translation>
     </message>

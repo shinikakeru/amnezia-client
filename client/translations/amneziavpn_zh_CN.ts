@@ -515,7 +515,7 @@
 <context>
     <name>HomeServerSummary</name>
     <message>
-        <location filename="../ui/qml/Components/HomeServerSummary.qml" line="91"/>
+        <location filename="../ui/qml/Components/HomeServerSummary.qml" line="124"/>
         <source>AmneziaWG 2.0 is outdated and no longer supported. Continued use requires a fresh installation of the AmneziaWG 3.1 container.</source>
         <translation>AmneziaWG 2.0 已过时且不再受支持。继续使用需要全新安装 AmneziaWG 3.1 容器。</translation>
     </message>
@@ -850,55 +850,55 @@ Already installed containers were found on the server. All installed containers 
 <context>
     <name>PageHome</name>
     <message>
-        <location filename="../ui/qml/Pages2/PageHome.qml" line="121"/>
+        <location filename="../ui/qml/Pages2/PageHome.qml" line="137"/>
         <source>Logging enabled</source>
         <translation>日志记录已启用</translation>
     </message>
     <message>
-        <location filename="../ui/qml/Pages2/PageHome.qml" line="137"/>
+        <location filename="../ui/qml/Pages2/PageHome.qml" line="153"/>
         <source>Dev gateway enabled</source>
         <translation>Dev gateway enabled</translation>
     </message>
     <message>
-        <location filename="../ui/qml/Pages2/PageHome.qml" line="171"/>
+        <location filename="../ui/qml/Pages2/PageHome.qml" line="187"/>
         <source>Split tunneling enabled</source>
         <translation>分隔隧道已启用</translation>
     </message>
     <message>
-        <location filename="../ui/qml/Pages2/PageHome.qml" line="171"/>
+        <location filename="../ui/qml/Pages2/PageHome.qml" line="187"/>
         <source>Split tunneling disabled</source>
         <translation>分隔隧道已禁用</translation>
     </message>
     <message>
-        <location filename="../ui/qml/Pages2/PageHome.qml" line="398"/>
+        <location filename="../ui/qml/Pages2/PageHome.qml" line="418"/>
         <source>Select an installed protocol or add a new one</source>
         <translation>选择已安装的协议或添加新协议</translation>
     </message>
     <message>
-        <location filename="../ui/qml/Pages2/PageHome.qml" line="60"/>
+        <location filename="../ui/qml/Pages2/PageHome.qml" line="68"/>
         <source>Unable change protocol while trying to make an active connection</source>
         <translation>正在尝试建立连接时无法更改协议</translation>
     </message>
     <message>
-        <location filename="../ui/qml/Pages2/PageHome.qml" line="64"/>
-        <location filename="../ui/qml/Pages2/PageHome.qml" line="514"/>
+        <location filename="../ui/qml/Pages2/PageHome.qml" line="72"/>
+        <location filename="../ui/qml/Pages2/PageHome.qml" line="534"/>
         <source>Cannot change protocol during active connection</source>
         <translation>存在活动连接时无法更改协议</translation>
     </message>
     <message>
-        <location filename="../ui/qml/Pages2/PageHome.qml" line="384"/>
-        <location filename="../ui/qml/Pages2/PageHome.qml" line="465"/>
+        <location filename="../ui/qml/Pages2/PageHome.qml" line="404"/>
+        <location filename="../ui/qml/Pages2/PageHome.qml" line="485"/>
         <source>Back</source>
         <translation>返回</translation>
     </message>
     <message>
-        <location filename="../ui/qml/Pages2/PageHome.qml" line="397"/>
-        <location filename="../ui/qml/Pages2/PageHome.qml" line="480"/>
+        <location filename="../ui/qml/Pages2/PageHome.qml" line="417"/>
+        <location filename="../ui/qml/Pages2/PageHome.qml" line="500"/>
         <source>VPN protocol</source>
         <translation>VPN协议</translation>
     </message>
     <message>
-        <location filename="../ui/qml/Pages2/PageHome.qml" line="347"/>
+        <location filename="../ui/qml/Pages2/PageHome.qml" line="367"/>
         <source>Servers</source>
         <translation>服务器</translation>
     </message>
@@ -4133,112 +4133,122 @@ Create one from the current settings.</source>
         <translation>允许截屏</translation>
     </message>
     <message>
-        <location filename="../ui/qml/Pages2/PageSettingsApplication.qml" line="81"/>
+        <location filename="../ui/qml/Pages2/PageSettingsApplication.qml" line="80"/>
         <source>Enable notifications</source>
         <translation>启用通知</translation>
     </message>
     <message>
-        <location filename="../ui/qml/Pages2/PageSettingsApplication.qml" line="82"/>
+        <location filename="../ui/qml/Pages2/PageSettingsApplication.qml" line="81"/>
         <source>Enable notifications to show the VPN state in the status bar</source>
         <translation>启用通知以在状态栏中显示 VPN 状态</translation>
     </message>
     <message>
-        <location filename="../ui/qml/Pages2/PageSettingsApplication.qml" line="97"/>
+        <location filename="../ui/qml/Pages2/PageSettingsApplication.qml" line="96"/>
         <source>Auto start</source>
         <translation>自动运行</translation>
     </message>
     <message>
-        <location filename="../ui/qml/Pages2/PageSettingsApplication.qml" line="98"/>
+        <location filename="../ui/qml/Pages2/PageSettingsApplication.qml" line="97"/>
         <source>Launch the application every time the device is starts</source>
         <translation>每次设备启动时启动应用程序</translation>
     </message>
     <message>
-        <location filename="../ui/qml/Pages2/PageSettingsApplication.qml" line="126"/>
+        <location filename="../ui/qml/Pages2/PageSettingsApplication.qml" line="125"/>
         <source>Auto connect</source>
         <translation>自动连接</translation>
     </message>
     <message>
-        <location filename="../ui/qml/Pages2/PageSettingsApplication.qml" line="127"/>
+        <location filename="../ui/qml/Pages2/PageSettingsApplication.qml" line="126"/>
         <source>Connect to VPN on app start</source>
         <translation>应用开启时连接VPN</translation>
     </message>
     <message>
-        <location filename="../ui/qml/Pages2/PageSettingsApplication.qml" line="156"/>
+        <location filename="../ui/qml/Pages2/PageSettingsApplication.qml" line="155"/>
         <source>Start minimized</source>
         <translation>最小化</translation>
     </message>
     <message>
-        <location filename="../ui/qml/Pages2/PageSettingsApplication.qml" line="157"/>
+        <location filename="../ui/qml/Pages2/PageSettingsApplication.qml" line="156"/>
         <source>Launch application minimized (works with autostart option turned on)</source>
         <translation>以最小化方式启动应用（需开启自动启动）</translation>
     </message>
     <message>
+        <location filename="../ui/qml/Pages2/PageSettingsApplication.qml" line="184"/>
+        <source>Hide IP for self-hosted servers</source>
+        <translation>隐藏自托管服务器的 IP</translation>
+    </message>
+    <message>
         <location filename="../ui/qml/Pages2/PageSettingsApplication.qml" line="185"/>
+        <source>Mask server IP address on the home screen</source>
+        <translation>在主屏幕上隐藏服务器 IP 地址</translation>
+    </message>
+    <message>
+        <location filename="../ui/qml/Pages2/PageSettingsApplication.qml" line="212"/>
         <source>News Notification</source>
         <translation>新闻通知</translation>
     </message>
     <message>
-        <location filename="../ui/qml/Pages2/PageSettingsApplication.qml" line="186"/>
+        <location filename="../ui/qml/Pages2/PageSettingsApplication.qml" line="213"/>
         <source>Show a notification icon for unread news</source>
         <translation>为未读新闻显示通知图标</translation>
     </message>
     <message>
-        <location filename="../ui/qml/Pages2/PageSettingsApplication.qml" line="212"/>
+        <location filename="../ui/qml/Pages2/PageSettingsApplication.qml" line="239"/>
         <source>Check for updates automatically</source>
         <translation>自动检查更新</translation>
     </message>
     <message>
-        <location filename="../ui/qml/Pages2/PageSettingsApplication.qml" line="213"/>
+        <location filename="../ui/qml/Pages2/PageSettingsApplication.qml" line="240"/>
         <source>Check for a new app version at startup</source>
         <translation>启动时检查应用的新版本</translation>
     </message>
     <message>
-        <location filename="../ui/qml/Pages2/PageSettingsApplication.qml" line="239"/>
+        <location filename="../ui/qml/Pages2/PageSettingsApplication.qml" line="266"/>
         <source>Language</source>
         <translation>语言</translation>
     </message>
     <message>
-        <location filename="../ui/qml/Pages2/PageSettingsApplication.qml" line="253"/>
+        <location filename="../ui/qml/Pages2/PageSettingsApplication.qml" line="280"/>
         <source>Logging</source>
         <translation>日志</translation>
     </message>
     <message>
-        <location filename="../ui/qml/Pages2/PageSettingsApplication.qml" line="254"/>
+        <location filename="../ui/qml/Pages2/PageSettingsApplication.qml" line="281"/>
         <source>Enabled</source>
         <translation>开启</translation>
     </message>
     <message>
-        <location filename="../ui/qml/Pages2/PageSettingsApplication.qml" line="254"/>
+        <location filename="../ui/qml/Pages2/PageSettingsApplication.qml" line="281"/>
         <source>Disabled</source>
         <translation>禁用</translation>
     </message>
     <message>
-        <location filename="../ui/qml/Pages2/PageSettingsApplication.qml" line="267"/>
+        <location filename="../ui/qml/Pages2/PageSettingsApplication.qml" line="294"/>
         <source>Reset settings and remove all data from the application</source>
         <translation>重置并清理应用的所有数据</translation>
     </message>
     <message>
-        <location filename="../ui/qml/Pages2/PageSettingsApplication.qml" line="273"/>
+        <location filename="../ui/qml/Pages2/PageSettingsApplication.qml" line="300"/>
         <source>Reset settings and remove all data from the application?</source>
         <translation>重置并清理应用的所有数据？</translation>
     </message>
     <message>
-        <location filename="../ui/qml/Pages2/PageSettingsApplication.qml" line="274"/>
+        <location filename="../ui/qml/Pages2/PageSettingsApplication.qml" line="301"/>
         <source>All settings will be reset to default. All installed AmneziaVPN services will still remain on the server.</source>
         <translation>所有配置恢复为默认值。服务器已安装的AmneziaVPN服务将被保留。</translation>
     </message>
     <message>
-        <location filename="../ui/qml/Pages2/PageSettingsApplication.qml" line="275"/>
+        <location filename="../ui/qml/Pages2/PageSettingsApplication.qml" line="302"/>
         <source>Continue</source>
         <translation>继续</translation>
     </message>
     <message>
-        <location filename="../ui/qml/Pages2/PageSettingsApplication.qml" line="276"/>
+        <location filename="../ui/qml/Pages2/PageSettingsApplication.qml" line="303"/>
         <source>Cancel</source>
         <translation>取消</translation>
     </message>
     <message>
-        <location filename="../ui/qml/Pages2/PageSettingsApplication.qml" line="280"/>
+        <location filename="../ui/qml/Pages2/PageSettingsApplication.qml" line="307"/>
         <source>Cannot reset settings during active connection</source>
         <translation>存在活动连接时无法重置设置</translation>
     </message>

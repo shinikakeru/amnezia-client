@@ -515,7 +515,7 @@
 <context>
     <name>HomeServerSummary</name>
     <message>
-        <location filename="../ui/qml/Components/HomeServerSummary.qml" line="91"/>
+        <location filename="../ui/qml/Components/HomeServerSummary.qml" line="124"/>
         <source>AmneziaWG 2.0 is outdated and no longer supported. Continued use requires a fresh installation of the AmneziaWG 3.1 container.</source>
         <translation>AmneziaWG 2.0 est obsolète et n&apos;est plus pris en charge. Pour continuer à l&apos;utiliser, une nouvelle installation du conteneur AmneziaWG 3.1 est nécessaire.</translation>
     </message>
@@ -850,55 +850,55 @@ Des conteneurs déjà installés ont été trouvés sur le serveur. Tous les con
 <context>
     <name>PageHome</name>
     <message>
-        <location filename="../ui/qml/Pages2/PageHome.qml" line="121"/>
+        <location filename="../ui/qml/Pages2/PageHome.qml" line="137"/>
         <source>Logging enabled</source>
         <translation>Journalisation activée</translation>
     </message>
     <message>
-        <location filename="../ui/qml/Pages2/PageHome.qml" line="137"/>
+        <location filename="../ui/qml/Pages2/PageHome.qml" line="153"/>
         <source>Dev gateway enabled</source>
         <translation>Passerelle de développement activée</translation>
     </message>
     <message>
-        <location filename="../ui/qml/Pages2/PageHome.qml" line="171"/>
+        <location filename="../ui/qml/Pages2/PageHome.qml" line="187"/>
         <source>Split tunneling enabled</source>
         <translation>Split tunneling activé</translation>
     </message>
     <message>
-        <location filename="../ui/qml/Pages2/PageHome.qml" line="171"/>
+        <location filename="../ui/qml/Pages2/PageHome.qml" line="187"/>
         <source>Split tunneling disabled</source>
         <translation>Split tunneling désactivé</translation>
     </message>
     <message>
-        <location filename="../ui/qml/Pages2/PageHome.qml" line="398"/>
+        <location filename="../ui/qml/Pages2/PageHome.qml" line="418"/>
         <source>Select an installed protocol or add a new one</source>
         <translation>Sélectionnez un protocole installé ou ajoutez-en un nouveau</translation>
     </message>
     <message>
-        <location filename="../ui/qml/Pages2/PageHome.qml" line="60"/>
+        <location filename="../ui/qml/Pages2/PageHome.qml" line="68"/>
         <source>Unable change protocol while trying to make an active connection</source>
         <translation>Impossible de changer de protocole pendant l&apos;établissement d&apos;une connexion</translation>
     </message>
     <message>
-        <location filename="../ui/qml/Pages2/PageHome.qml" line="64"/>
-        <location filename="../ui/qml/Pages2/PageHome.qml" line="514"/>
+        <location filename="../ui/qml/Pages2/PageHome.qml" line="72"/>
+        <location filename="../ui/qml/Pages2/PageHome.qml" line="534"/>
         <source>Cannot change protocol during active connection</source>
         <translation>Impossible de changer de protocole pendant une connexion active</translation>
     </message>
     <message>
-        <location filename="../ui/qml/Pages2/PageHome.qml" line="384"/>
-        <location filename="../ui/qml/Pages2/PageHome.qml" line="465"/>
+        <location filename="../ui/qml/Pages2/PageHome.qml" line="404"/>
+        <location filename="../ui/qml/Pages2/PageHome.qml" line="485"/>
         <source>Back</source>
         <translation>Retour</translation>
     </message>
     <message>
-        <location filename="../ui/qml/Pages2/PageHome.qml" line="397"/>
-        <location filename="../ui/qml/Pages2/PageHome.qml" line="480"/>
+        <location filename="../ui/qml/Pages2/PageHome.qml" line="417"/>
+        <location filename="../ui/qml/Pages2/PageHome.qml" line="500"/>
         <source>VPN protocol</source>
         <translation>Protocole VPN</translation>
     </message>
     <message>
-        <location filename="../ui/qml/Pages2/PageHome.qml" line="347"/>
+        <location filename="../ui/qml/Pages2/PageHome.qml" line="367"/>
         <source>Servers</source>
         <translation>Serveurs</translation>
     </message>
@@ -4133,112 +4133,122 @@ Créez-en une à partir des paramètres actuels.</translation>
         <translation>Autoriser les captures d&apos;écran de l&apos;application</translation>
     </message>
     <message>
-        <location filename="../ui/qml/Pages2/PageSettingsApplication.qml" line="81"/>
+        <location filename="../ui/qml/Pages2/PageSettingsApplication.qml" line="80"/>
         <source>Enable notifications</source>
         <translation>Activer les notifications</translation>
     </message>
     <message>
-        <location filename="../ui/qml/Pages2/PageSettingsApplication.qml" line="82"/>
+        <location filename="../ui/qml/Pages2/PageSettingsApplication.qml" line="81"/>
         <source>Enable notifications to show the VPN state in the status bar</source>
         <translation>Activez les notifications pour afficher l&apos;état du VPN dans la barre d&apos;état</translation>
     </message>
     <message>
-        <location filename="../ui/qml/Pages2/PageSettingsApplication.qml" line="97"/>
+        <location filename="../ui/qml/Pages2/PageSettingsApplication.qml" line="96"/>
         <source>Auto start</source>
         <translation>Démarrage automatique</translation>
     </message>
     <message>
-        <location filename="../ui/qml/Pages2/PageSettingsApplication.qml" line="98"/>
+        <location filename="../ui/qml/Pages2/PageSettingsApplication.qml" line="97"/>
         <source>Launch the application every time the device is starts</source>
         <translation>Lancer l&apos;application à chaque démarrage de l&apos;appareil</translation>
     </message>
     <message>
-        <location filename="../ui/qml/Pages2/PageSettingsApplication.qml" line="126"/>
+        <location filename="../ui/qml/Pages2/PageSettingsApplication.qml" line="125"/>
         <source>Auto connect</source>
         <translation>Connexion automatique</translation>
     </message>
     <message>
-        <location filename="../ui/qml/Pages2/PageSettingsApplication.qml" line="127"/>
+        <location filename="../ui/qml/Pages2/PageSettingsApplication.qml" line="126"/>
         <source>Connect to VPN on app start</source>
         <translation>Se connecter au VPN au démarrage de l&apos;application</translation>
     </message>
     <message>
-        <location filename="../ui/qml/Pages2/PageSettingsApplication.qml" line="156"/>
+        <location filename="../ui/qml/Pages2/PageSettingsApplication.qml" line="155"/>
         <source>Start minimized</source>
         <translation>Démarrer en mode réduit</translation>
     </message>
     <message>
-        <location filename="../ui/qml/Pages2/PageSettingsApplication.qml" line="157"/>
+        <location filename="../ui/qml/Pages2/PageSettingsApplication.qml" line="156"/>
         <source>Launch application minimized (works with autostart option turned on)</source>
         <translation>Lancer l&apos;application en mode réduit (fonctionne avec le démarrage automatique activé)</translation>
     </message>
     <message>
+        <location filename="../ui/qml/Pages2/PageSettingsApplication.qml" line="184"/>
+        <source>Hide IP for self-hosted servers</source>
+        <translation>Masquer l'IP des serveurs auto-hébergés</translation>
+    </message>
+    <message>
         <location filename="../ui/qml/Pages2/PageSettingsApplication.qml" line="185"/>
+        <source>Mask server IP address on the home screen</source>
+        <translation>Masquer l'adresse IP du serveur sur l'écran d'accueil</translation>
+    </message>
+    <message>
+        <location filename="../ui/qml/Pages2/PageSettingsApplication.qml" line="212"/>
         <source>News Notification</source>
         <translation>Notification d&apos;actualités</translation>
     </message>
     <message>
-        <location filename="../ui/qml/Pages2/PageSettingsApplication.qml" line="186"/>
+        <location filename="../ui/qml/Pages2/PageSettingsApplication.qml" line="213"/>
         <source>Show a notification icon for unread news</source>
         <translation>Afficher une icône de notification pour les actualités non lues</translation>
     </message>
     <message>
-        <location filename="../ui/qml/Pages2/PageSettingsApplication.qml" line="212"/>
+        <location filename="../ui/qml/Pages2/PageSettingsApplication.qml" line="239"/>
         <source>Check for updates automatically</source>
         <translation>Rechercher les mises à jour automatiquement</translation>
     </message>
     <message>
-        <location filename="../ui/qml/Pages2/PageSettingsApplication.qml" line="213"/>
+        <location filename="../ui/qml/Pages2/PageSettingsApplication.qml" line="240"/>
         <source>Check for a new app version at startup</source>
         <translation>Rechercher une nouvelle version de l&apos;application au démarrage</translation>
     </message>
     <message>
-        <location filename="../ui/qml/Pages2/PageSettingsApplication.qml" line="239"/>
+        <location filename="../ui/qml/Pages2/PageSettingsApplication.qml" line="266"/>
         <source>Language</source>
         <translation>Langue</translation>
     </message>
     <message>
-        <location filename="../ui/qml/Pages2/PageSettingsApplication.qml" line="253"/>
+        <location filename="../ui/qml/Pages2/PageSettingsApplication.qml" line="280"/>
         <source>Logging</source>
         <translation>Journalisation</translation>
     </message>
     <message>
-        <location filename="../ui/qml/Pages2/PageSettingsApplication.qml" line="254"/>
+        <location filename="../ui/qml/Pages2/PageSettingsApplication.qml" line="281"/>
         <source>Enabled</source>
         <translation>Activé</translation>
     </message>
     <message>
-        <location filename="../ui/qml/Pages2/PageSettingsApplication.qml" line="254"/>
+        <location filename="../ui/qml/Pages2/PageSettingsApplication.qml" line="281"/>
         <source>Disabled</source>
         <translation>Désactivé</translation>
     </message>
     <message>
-        <location filename="../ui/qml/Pages2/PageSettingsApplication.qml" line="267"/>
+        <location filename="../ui/qml/Pages2/PageSettingsApplication.qml" line="294"/>
         <source>Reset settings and remove all data from the application</source>
         <translation>Réinitialiser les paramètres et supprimer toutes les données de l&apos;application</translation>
     </message>
     <message>
-        <location filename="../ui/qml/Pages2/PageSettingsApplication.qml" line="273"/>
+        <location filename="../ui/qml/Pages2/PageSettingsApplication.qml" line="300"/>
         <source>Reset settings and remove all data from the application?</source>
         <translation>Réinitialiser les paramètres et supprimer toutes les données de l&apos;application ?</translation>
     </message>
     <message>
-        <location filename="../ui/qml/Pages2/PageSettingsApplication.qml" line="274"/>
+        <location filename="../ui/qml/Pages2/PageSettingsApplication.qml" line="301"/>
         <source>All settings will be reset to default. All installed AmneziaVPN services will still remain on the server.</source>
         <translation>Tous les paramètres seront réinitialisés par défaut. Tous les services AmneziaVPN installés resteront sur le serveur.</translation>
     </message>
     <message>
-        <location filename="../ui/qml/Pages2/PageSettingsApplication.qml" line="275"/>
+        <location filename="../ui/qml/Pages2/PageSettingsApplication.qml" line="302"/>
         <source>Continue</source>
         <translation>Continuer</translation>
     </message>
     <message>
-        <location filename="../ui/qml/Pages2/PageSettingsApplication.qml" line="276"/>
+        <location filename="../ui/qml/Pages2/PageSettingsApplication.qml" line="303"/>
         <source>Cancel</source>
         <translation>Annuler</translation>
     </message>
     <message>
-        <location filename="../ui/qml/Pages2/PageSettingsApplication.qml" line="280"/>
+        <location filename="../ui/qml/Pages2/PageSettingsApplication.qml" line="307"/>
         <source>Cannot reset settings during active connection</source>
         <translation>Impossible de réinitialiser les paramètres pendant une connexion active</translation>
     </message>
