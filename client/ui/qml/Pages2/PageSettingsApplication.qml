@@ -202,7 +202,7 @@ PageType {
                         id: switcherHideSelfHostedIp
 
                         focusPolicy: Qt.NoFocus
-
+                        checked: SettingsController.isHideSelfHostedIpEnabled()
                         onToggled: function() {
                             if (checked !== SettingsController.isHideSelfHostedIpEnabled()) {
                                 SettingsController.toggleHideSelfHostedIp(checked)
