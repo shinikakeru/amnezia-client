@@ -13,15 +13,6 @@ import "../Components"
 PageType {
     id: root
 
-    onVisibleChanged: {
-        if (visible) {
-            const enabled = SettingsController.isHideSelfHostedIpEnabled()
-            if (switcherHideSelfHostedIp.checked !== enabled) {
-                switcherHideSelfHostedIp.checked = enabled
-            }
-        }
-    }
-
     FlickableType {
         id: flickable
 
