@@ -80,8 +80,15 @@ PageType {
         }
     }
 
+    onVisibleChanged: {
+        if (visible) {
+            root.()
+        }
+    }
+
     Component.onCompleted: {
         root.updateApiProtocolState()
+        root.syncIpVisibilityWithSetting()
     }
 
     Connections {
@@ -89,15 +96,7 @@ PageType {
 
         function onDefaultServerIdChanged() {
             root.updateApiProtocolState()
-            root.isIpVisible = !(root.isSelfHostedDefaultServer && SettingsController.hideSelfHostedIp)
-        }
-    }
-
-    Connections {
-        target: SettingsController
-
-        function onHideSelfHostedIpChanged() {
-            root.isIpVisible = !(root.isSelfHostedDefaultServer && SettingsController.hideSelfHostedIp)
+            root.syncIpVisibilityWithSetting()
         }
     }
 
