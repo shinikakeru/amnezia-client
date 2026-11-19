@@ -13,14 +13,21 @@ import "../Components"
 PageType {
     id: root
 
+    function syncHideSelfHostedIp() {
+        const enabled = SettingsController.isHideSelfHostedIpEnabled()
+        if (switcherHideSelfHostedIp.checked !== enabled) {
+            switcherHideSelfHostedIp.checked = enabled
+        }
+    }
+    Component.onCompleted: {
+        syncHideSelfHostedIp()
+    }
+
     onVisibleChanged: {
         if (visible) {
-            const enabled = SettingsController.isHideSelfHostedIpEnabled()
-            if (switcherHideSelfHostedIp.checked !== enabled) {
-                switcherHideSelfHostedIp.checked = enabled
-                }
-            }
+            syncHideSelfHostedIp()
         }
+    }
 
     FlickableType {
         id: flickable
@@ -203,11 +210,11 @@ PageType {
                         focusPolicy: Qt.NoFocus
 
                         onToggled: function() {
-                            console.log("HIDE_IP_DEBUG toggle checked:", checked, "before:", SettingsController.isHideSelfHostedIpEnabled())
-                            if (checked !== SettingsController.isHideSelfHostedIpEnabled()) {
-                                SettingsController.toggleHideSelfHostedIp(checked)
+                            const nextState = checked
+                            if (nextState !== SettingsController.isHideSelfHostedIpEnabled()) {
+                                SettingsController.toggleHideSelfHostedIp(nextState)
                             }
-                            console.log("HIDE_IP_DEBUG after:", SettingsController.isHideSelfHostedIpEnabled())
+                            switcherHideSelfHostedIp.checked = SettingsController.isHideSelfHostedIpEnabled()
                         }
                     }
                 }
