@@ -185,7 +185,6 @@ PageType {
                     subtitle: qsTr("Mask server IP address on the home screen")
 
                     onClicked: {
-                        console.log("HIDE_IP_QML row clicked, checked before:", switcherHideSelfHostedIp.checked)
                         switcherHideSelfHostedIp.toggle()
                         switcherHideSelfHostedIp.toggled()
                     }
@@ -196,7 +195,6 @@ PageType {
                         focusPolicy: Qt.NoFocus
                         checked: SettingsController.isHideSelfHostedIpEnabled()
                         onToggled: function() {
-                            console.log("HIDE_IP_QML onToggled checked:", checked, "cpp:", SettingsController.isHideSelfHostedIpEnabled())
                             if (checked !== SettingsController.isHideSelfHostedIpEnabled()) {
                                 SettingsController.toggleHideSelfHostedIp(checked)
                             }
