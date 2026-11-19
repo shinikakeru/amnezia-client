@@ -57,6 +57,9 @@ public:
     bool isScreenshotsEnabled() const;
     void toggleScreenshotsEnabled(bool enable);
 
+    bool isHideSelfHostedIpEnabled() const;
+    void toggleHideSelfHostedIp(bool enable);
+
     bool isNewsNotificationsEnabled() const;
     void toggleNewsNotificationsEnabled(bool enable);
 
@@ -81,9 +84,6 @@ public:
     QString getGatewayEndpoint() const;
     bool isDevGatewayEnv() const;
     void toggleDevGatewayEnv(bool enabled);
-
-    bool isHideSelfHostedIpEnabled() const;
-    void toggleHideSelfHostedIp(bool enable);
 
     bool isHomeAdLabelVisible() const;
     void disableHomeAdLabel();
