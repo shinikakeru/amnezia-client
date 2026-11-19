@@ -20,6 +20,12 @@ PageType {
 
         contentHeight: content.implicitHeight
 
+        onVisibleChanged: {
+        if (visible) {
+            switcherHideSelfHostedIp.checked = SettingsController.isHideSelfHostedIpEnabled()
+            }
+        }
+
         ColumnLayout {
             id: content
 
