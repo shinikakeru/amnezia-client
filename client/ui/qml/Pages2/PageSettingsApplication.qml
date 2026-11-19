@@ -195,11 +195,11 @@ PageType {
 
                         focusPolicy: Qt.NoFocus
 
-                        checked: SettingsController.isHideSelfHostedIpEnabled()
+                        Component.onCompleted: {
+                            checked = SettingsController.isHideSelfHostedIpEnabled()
+                        }
                         onToggled: function() {
-                            if (checked !== SettingsController.isHideSelfHostedIpEnabled()) {
-                                SettingsController.toggleHideSelfHostedIp(checked)
-                            }
+                            SettingsController.toggleHideSelfHostedIp(checked)
                         }
                     }
                 }
