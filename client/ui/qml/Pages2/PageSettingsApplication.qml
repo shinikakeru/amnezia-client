@@ -15,7 +15,7 @@ PageType {
 
     onVisibleChanged: {
         if (visible) {
-            const enabled = SettingsUiController.isHideSelfHostedIpEnabled()
+            const enabled = SettingsController.isHideSelfHostedIpEnabled()
             if (switcherHideSelfHostedIp.checked !== enabled) {
                 switcherHideSelfHostedIp.checked = enabled
                 }
@@ -203,14 +203,14 @@ PageType {
                         focusPolicy: Qt.NoFocus
 
                         Component.onCompleted: {
-                            checked = SettingsUiController.isHideSelfHostedIpEnabled()
+                            checked = SettingsController.isHideSelfHostedIpEnabled()
                         }
                         onToggled: function() {
-                            console.log("HIDE_IP_DEBUG toggle checked:", checked, "before:", SettingsUiController.isHideSelfHostedIpEnabled())
-                            if (checked !== SettingsUiController.isHideSelfHostedIpEnabled()) {
-                                SettingsUiController.toggleHideSelfHostedIp(checked)
+                            console.log("HIDE_IP_DEBUG toggle checked:", checked, "before:", SettingsController.isHideSelfHostedIpEnabled())
+                            if (checked !== SettingsController.isHideSelfHostedIpEnabled()) {
+                                SettingsController.toggleHideSelfHostedIp(checked)
                             }
-                            console.log("HIDE_IP_DEBUG after:", SettingsUiController.isHideSelfHostedIpEnabled())
+                            console.log("HIDE_IP_DEBUG after:", SettingsController.isHideSelfHostedIpEnabled())
                         }
                     }
                 }
