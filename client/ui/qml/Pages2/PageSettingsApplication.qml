@@ -206,9 +206,11 @@ PageType {
                             checked = SettingsController.isHideSelfHostedIpEnabled()
                         }
                         onToggled: function() {
+                            console.log("HIDE_IP_DEBUG toggle checked:", checked, "before:", SettingsController.isHideSelfHostedIpEnabled())
                             if (checked !== SettingsController.isHideSelfHostedIpEnabled()) {
                                 SettingsController.toggleHideSelfHostedIp(checked)
                             }
+                            console.log("HIDE_IP_DEBUG after:", SettingsController.isHideSelfHostedIpEnabled())
                         }
                     }
                 }
