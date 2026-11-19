@@ -82,7 +82,7 @@ PageType {
 
     onVisibleChanged: {
         if (visible) {
-            root.()
+            root.syncIpVisibilityWithSetting()
         }
     }
 
