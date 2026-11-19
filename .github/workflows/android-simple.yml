@@ -5,15 +5,15 @@ on:
 
 env:
   QT_MIRROR: https://mirrors.ocf.berkeley.edu/qt/
+  ANDROID_PLATFORM: android-28
+  NDK_VERSION: 27.0.11718014
+  QT_VERSION: 6.10.1
+  QT_MODULES: qtremoteobjects qt5compat qtimageformats qtshadertools
+  APP_ANDROID_MIN_SDK: 28
 
 jobs:
   build-apk:
     runs-on: ubuntu-22.04
-    env:
-      ANDROID_PLATFORM: android-28
-      NDK_VERSION: 27.0.11718014
-      QT_VERSION: 6.10.1
-      QT_MODULES: qtremoteobjects qt5compat qtimageformats qtshadertools
 
     steps:
       - name: Checkout code and submodules
@@ -63,21 +63,26 @@ jobs:
       - name: Build APK
         env:
           QT_INSTALL_DIR: ${{ runner.temp }}
-          ANDROID_KEYSTORE_PATH: ${{ runner.temp }}/release-key.jks
-          ANDROID_KEYSTORE_PASSWORD: android123
-          ANDROID_KEY_ALIAS: amnezia
-          ANDROID_KEY_PASSWORD: android123
+          QT_ANDROID_KEYSTORE_PATH: ${{ runner.temp }}/release-key.jks
+          QT_ANDROID_KEYSTORE_ALIAS: amnezia
+          QT_ANDROID_KEYSTORE_STORE_PASS: android123
         run: |
+          set -e
           mkdir -p apk-out
           keytool -genkeypair -v \
-            -keystore "$ANDROID_KEYSTORE_PATH" \
-            -alias "$ANDROID_KEY_ALIAS" \
+            -keystore "$QT_ANDROID_KEYSTORE_PATH" \
+            -alias "$QT_ANDROID_KEYSTORE_ALIAS" \
             -keyalg RSA -keysize 2048 -validity 10000 \
-            -storepass "$ANDROID_KEYSTORE_PASSWORD" \
-            -keypass "$ANDROID_KEY_PASSWORD" \
+            -storepass "$QT_ANDROID_KEYSTORE_STORE_PASS" \
+            -keypass "$QT_ANDROID_KEYSTORE_STORE_PASS" \
             -dname "CN=Amnezia, OU=Dev, O=Amnezia, L=City, S=State, C=US"
-          deploy/build.sh -t android --abi arm64-v8a
-          cp deploy/build/client/android-build/AmneziaVPN.apk apk-out/AmneziaVPN-arm64.apk
+          deploy/build.sh -t android --sign --abi arm64-v8a
+          if [ -f deploy/build/client/android-build/AmneziaVPN.apk ]; then
+            cp deploy/build/client/android-build/AmneziaVPN.apk apk-out/AmneziaVPN-arm64.apk
+          else
+            find deploy/build -name "*arm64*.apk" -o -name "*.apk" | head -n 5
+            exit 1
+          fi
 
       - name: Upload APK artifact
         uses: actions/upload-artifact@v7
