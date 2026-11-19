@@ -8,7 +8,9 @@ import "../Controls2/TextTypes"
 
 ColumnLayout {
     id: root
-
+    
+    property bool isIpVisible: false
+    signal toggleIpVisibilityRequested()
     property bool expanded: false
     property bool pressed: false
     property bool outdatedWarningVisible: false
@@ -31,15 +33,20 @@ ColumnLayout {
 
         spacing: 10
 
-        H1TextType {
-            Layout.maximumWidth: root.width - 32 - (chevron.visible ? chevron.width + 10 : 0)
-
-            maximumLineCount: 1
-            wrapMode: Text.NoWrap
-            elide: Qt.ElideRight
-
-            text: ServersUiController.defaultServerName
-            horizontalAlignment: Qt.AlignHCenter
+        HITextType {
+        Layout.maximumWidth: root.width - 32 - (chevron.visible ? chevron.width + 10 : 0)
+        maximumLineCount: 1
+        wrapMode: Text.NoWrap
+        elide: Text.ElideRight
+    
+        text: root.isIpVisible ? ServersUiController.defaultServerName : "***.***.***.***"
+        horizontalAlignment: Text.AlignHCenter
+    
+        MouseArea {
+            anchors.fill: parent
+            cursorShape: Qt.PointingHandCursor
+                onClicked: root.toggleIpVisibilityRequested()
+            }
         }
 
         IconButtonType {
