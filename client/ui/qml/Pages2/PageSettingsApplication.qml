@@ -195,7 +195,6 @@ PageType {
 
                     onClicked: {
                         switcherHideSelfHostedIp.toggle()
-                        switcherHideSelfHostedIp.toggled()
                     }
 
                     SwitchType {
