@@ -18,7 +18,8 @@ import "../Components"
 PageType {
     id: root
     
-    property bool isIpVisible: false
+    readonly property bool isSelfHostedDefaultServer: !ServersUiController.isDefaultServerFromApi
+    property bool isIpVisible: !(root.isSelfHostedDefaultServer && SettingsController.hideSelfHostedIp)
     property var apiAvailableProtocols: []
     property string apiCurrentProtocol: ""
 
@@ -85,6 +86,15 @@ PageType {
 
         function onDefaultServerIdChanged() {
             root.updateApiProtocolState()
+            root.isIpVisible = !(root.isSelfHostedDefaultServer && SettingsController.hideSelfHostedIp)
+        }
+    }
+
+    Connections {
+        target: SettingsController
+
+        function onHideSelfHostedIpChanged() {
+            root.isIpVisible = !(root.isSelfHostedDefaultServer && SettingsController.hideSelfHostedIp)
         }
     }
 
