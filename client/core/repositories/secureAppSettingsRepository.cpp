@@ -375,6 +375,16 @@ void SecureAppSettingsRepository::setScreenshotsEnabled(bool enabled)
     emit screenshotsEnabledChanged(enabled);
 }
 
+bool SecureAppSettingsRepository::isHideSelfHostedIpEnabled() const
+{
+    return value("Conf/hideSelfHostedIp", false).toBool();
+}
+
+void SecureAppSettingsRepository::setHideSelfHostedIpEnabled(bool enabled)
+{
+    setValue("Conf/hideSelfHostedIp", enabled);
+}
+
 int SecureAppSettingsRepository::countryListSortMode(const QString &listId) const
 {
     return value("Conf/countryListSortMode/" + listId, 0).toInt();
