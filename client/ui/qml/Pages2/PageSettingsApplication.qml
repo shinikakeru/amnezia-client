@@ -176,6 +176,35 @@ PageType {
                 }
 
                 ListItemType {
+                    id: switcherHideSelfHostedIpRow
+
+                    Layout.fillWidth: true
+
+                    visible: !ServersUiController.isDefaultServerFromApi
+
+                    text: qsTr("Hide IP for self-hosted servers")
+                    subtitle: qsTr("Mask server IP address on the home screen")
+
+                    onClicked: {
+                        switcherHideSelfHostedIp.toggle()
+                        switcherHideSelfHostedIp.toggled()
+                    }
+
+                    SwitchType {
+                        id: switcherHideSelfHostedIp
+
+                        focusPolicy: Qt.NoFocus
+
+                        checked: SettingsController.hideSelfHostedIp
+                        onToggled: function() {
+                            if (checked !== SettingsController.hideSelfHostedIp) {
+                                SettingsController.hideSelfHostedIp = checked
+                            }
+                        }
+                    }
+                }
+
+                ListItemType {
                     id: switcherNewsNotificationEnabledRow
 
                     Layout.fillWidth: true
