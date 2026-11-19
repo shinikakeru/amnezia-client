@@ -77,6 +77,8 @@ public:
     void setStartMinimized(bool enabled);
     bool isScreenshotsEnabled() const;
     void setScreenshotsEnabled(bool enabled);
+    bool isHideSelfHostedIpEnabled() const;
+    void setHideSelfHostedIpEnabled(bool enabled);
 
     int countryListSortMode(const QString &listId) const;
     void setCountryListSortMode(const QString &listId, int mode);
