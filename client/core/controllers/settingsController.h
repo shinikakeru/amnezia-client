@@ -57,8 +57,8 @@ public:
     bool isScreenshotsEnabled() const;
     void toggleScreenshotsEnabled(bool enable);
 
-    bool isHideSelfHostedIpEnabled() const;
-    void toggleHideSelfHostedIp(bool enable);
+    Q_INVOKABLE bool isHideSelfHostedIpEnabled() const;
+    Q_INVOKABLE void toggleHideSelfHostedIp(bool enable);
 
     bool isNewsNotificationsEnabled() const;
     void toggleNewsNotificationsEnabled(bool enable);
