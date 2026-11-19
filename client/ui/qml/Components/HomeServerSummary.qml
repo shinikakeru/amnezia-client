@@ -39,14 +39,8 @@ ColumnLayout {
             wrapMode: Text.NoWrap
             elide: Qt.ElideRight
 
-            text: root.isIpVisible ? ServersUiController.defaultServerName : "***.***.***.***"
+            text: ServersUiController.defaultServerName
             horizontalAlignment: Text.AlignHCenter
-
-            MouseArea {
-                anchors.fill: parent
-                cursorShape: Qt.PointingHandCursor
-                onClicked: root.toggleIpVisibilityRequested()
-            }
         }
 
         IconButtonType {
