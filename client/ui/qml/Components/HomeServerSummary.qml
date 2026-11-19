@@ -11,6 +11,7 @@ ColumnLayout {
 
     property bool isIpVisible: false
     signal toggleIpVisibilityRequested()
+
     property bool expanded: false
     property bool pressed: false
     property bool outdatedWarningVisible: false
@@ -21,6 +22,20 @@ ColumnLayout {
     signal expandRequested()
     signal serverInfoRequested()
     signal protocolSelectionRequested()
+
+    function formatServerDescription(rawText, visible) {
+        if (!rawText) {
+            return ""
+        }
+        if (visible) {
+            return rawText
+        }
+        var pipeIndex = rawText.indexOf("|")
+        if (pipeIndex !== -1) {
+            return rawText.slice(0, pipeIndex + 1) + " ***.***.***.***"
+        }
+        return "***.***.***.***"
+    }
 
     spacing: 0
 
@@ -57,27 +72,44 @@ ColumnLayout {
         }
     }
 
-    HomeInfoButton {
+    Item {
+        id: serverDescriptionContainer
+
         Layout.fillWidth: true
-        Layout.maximumWidth: implicitWidth
+        Layout.maximumWidth: descriptionButton.implicitWidth
         Layout.alignment: Qt.AlignHCenter
         Layout.topMargin: root.expanded ? 8 : 6
         Layout.leftMargin: 16
         Layout.rightMargin: 16
         Layout.bottomMargin: (root.outdatedWarningVisible || root.protocolSelectionVisible) ? 8 : 16
 
-        enabled: ServersUiController.defaultServerImagePathCollapsed !== ""
+        implicitWidth: descriptionButton.implicitWidth
+        implicitHeight: descriptionButton.implicitHeight
 
-        largeText: true
-        maximumLineCount: 2
-        text: ServersUiController.defaultServerDescriptionCollapsed
-        leftImageSource: ServersUiController.defaultServerImagePathCollapsed
-        leftImageColor: AmneziaStyle.color.transparent
-        leftImageWidth: 20
-        leftImageHeight: 15
-        rightImageSource: enabled ? (root.expanded ? "qrc:/images/controls/chevron-down.svg" : "qrc:/images/controls/chevron-right.svg") : ""
+        HomeInfoButton {
+            id: descriptionButton
 
-        onClicked: root.serverInfoRequested()
+            anchors.fill: parent
+
+            enabled: ServersUiController.defaultServerImagePathCollapsed !== ""
+
+            largeText: true
+            maximumLineCount: 2
+            text: root.formatServerDescription(ServersUiController.defaultServerDescriptionCollapsed, root.isIpVisible)
+            leftImageSource: ServersUiController.defaultServerImagePathCollapsed
+            leftImageColor: AmneziaStyle.color.transparent
+            leftImageWidth: 20
+            leftImageHeight: 15
+            rightImageSource: enabled ? (root.expanded ? "qrc:/images/controls/chevron-down.svg" : "qrc:/images/controls/chevron-right.svg") : ""
+
+            onClicked: root.toggleIpVisibilityRequested()
+        }
+
+        MouseArea {
+            anchors.fill: parent
+            cursorShape: Qt.PointingHandCursor
+            onClicked: root.toggleIpVisibilityRequested()
+        }
     }
 
     NotificationType {
