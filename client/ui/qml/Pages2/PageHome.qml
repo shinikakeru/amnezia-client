@@ -19,7 +19,10 @@ PageType {
     id: root
     
     readonly property bool isSelfHostedDefaultServer: !ServersUiController.isDefaultServerFromApi
-    property bool isIpVisible: !(root.isSelfHostedDefaultServer && SettingsController.hideSelfHostedIp)
+    property bool isIpVisible: true
+    function syncIpVisibilityWithSetting() {
+        root.isIpVisible = !(root.isSelfHostedDefaultServer && SettingsController.isHideSelfHostedIpEnabled())
+    }
     property var apiAvailableProtocols: []
     property string apiCurrentProtocol: ""
 
