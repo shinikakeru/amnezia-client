@@ -78,12 +78,15 @@ bool SettingsController::isLoggingEnabled() const
 
 bool SettingsController::isHideSelfHostedIpEnabled() const
 {
-    return m_appSettingsRepository->isHideSelfHostedIpEnabled();
+    const bool val = m_appSettingsRepository->isHideSelfHostedIpEnabled();
+    qWarning() << "HIDE_IP_CPP isEnabled:" << val;
+    return val;
 }
 
 void SettingsController::toggleHideSelfHostedIp(bool enable)
 {
     m_appSettingsRepository->setHideSelfHostedIpEnabled(enable);
+    qWarning() << "HIDE_IP_CPP toggle:" << enable;
 }
 
 void SettingsController::toggleLogging(bool enable)
