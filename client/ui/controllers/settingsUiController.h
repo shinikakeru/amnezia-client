@@ -74,6 +74,9 @@ public slots:
     bool isScreenshotsEnabled();
     void toggleScreenshotsEnabled(bool enable);
 
+    bool isHideSelfHostedIpEnabled();
+    void toggleHideSelfHostedIp(bool enable);
+
     bool isCameraPresent();
 
     bool isKillSwitchEnabled();
