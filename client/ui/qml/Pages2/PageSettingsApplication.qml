@@ -210,7 +210,7 @@ PageType {
                             if (checked !== SettingsUiController.isHideSelfHostedIpEnabled()) {
                                 SettingsUiController.toggleHideSelfHostedIp(checked)
                             }
-                            console.log("HIDE_IP_DEBUG after:", SettingsController.isHideSelfHostedIpEnabled())
+                            console.log("HIDE_IP_DEBUG after:", SettingsUiController.isHideSelfHostedIpEnabled())
                         }
                     }
                 }
