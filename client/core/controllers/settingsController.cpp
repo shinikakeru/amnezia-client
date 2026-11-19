@@ -76,6 +76,16 @@ bool SettingsController::isLoggingEnabled() const
     return m_appSettingsRepository->isSaveLogs();
 }
 
+bool SettingsController::isHideSelfHostedIpEnabled() const
+{
+    return m_appSettingsRepository->isHideSelfHostedIpEnabled();
+}
+
+void SettingsController::toggleHideSelfHostedIp(bool enable)
+{
+    m_appSettingsRepository->setHideSelfHostedIpEnabled(enable);
+}
+
 void SettingsController::toggleLogging(bool enable)
 {
     m_appSettingsRepository->setSaveLogs(enable);
