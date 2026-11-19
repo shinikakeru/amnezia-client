@@ -62,7 +62,6 @@ PageType {
                     text: qsTr("Allow application screenshots")
 
                     onClicked: {
-                        switcherAllowScreenshots.toggle()
                         switcherAllowScreenshots.toggled()
                     }
 
