@@ -21,7 +21,10 @@ PageType {
     readonly property bool isSelfHostedDefaultServer: !ServersUiController.isDefaultServerFromApi
     property bool isIpVisible: true
     function syncIpVisibilityWithSetting() {
-        root.isIpVisible = !(root.isSelfHostedDefaultServer && SettingsController.isHideSelfHostedIpEnabled())
+        const isSelfHosted = root.isSelfHostedDefaultServer
+        const hideEnabled = SettingsController.isHideSelfHostedIpEnabled()
+        root.isIpVisible = !(isSelfHosted && hideEnabled)
+        console.log("HIDE_IP_DEBUG home isSelfHosted:", isSelfHosted, "hideEnabled:", hideEnabled, "isIpVisible:", root.isIpVisible)
     }
     property var apiAvailableProtocols: []
     property string apiCurrentProtocol: ""
