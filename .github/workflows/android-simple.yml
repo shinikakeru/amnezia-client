@@ -1,0 +1,76 @@
+name: Simple Android APK
+
+on:
+  workflow_dispatch:
+
+env:
+  QT_MIRROR: https://mirrors.ocf.berkeley.edu/qt/
+
+jobs:
+  build-apk:
+    runs-on: ubuntu-22.04
+    env:
+      ANDROID_PLATFORM: android-28
+      NDK_VERSION: 27.0.11718014
+      QT_VERSION: 6.10.1
+      QT_MODULES: qtremoteobjects qt5compat qtimageformats qtshadertools
+
+    steps:
+      - name: Checkout code and submodules
+        uses: actions/checkout@v4
+        with:
+          submodules: true
+
+      - name: Setup Java 17
+        uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: '17'
+
+      - name: Setup Android SDK & NDK
+        uses: android-actions/setup-android@v4
+        with:
+          packages: platforms;${{ env.ANDROID_PLATFORM }} ndk;${{ env.NDK_VERSION }}
+
+      - name: Setup Python and Conan
+        uses: actions/setup-python@v6
+        with:
+          python-version: '3.14'
+      - run: pip install "conan==2.28.0"
+
+      - name: Install Qt for Linux host and Android arm64
+        uses: jurplel/install-qt-action@v4.3.1
+        with:
+          version: ${{ env.QT_VERSION }}
+          host: linux
+          target: desktop
+          arch: linux_gcc_64
+          modules: ${{ env.QT_MODULES }}
+          dir: ${{ runner.temp }}
+          py7zrversion: '==0.22.*'
+          extra: '--base ${{ env.QT_MIRROR }}'
+      - uses: jurplel/install-qt-action@v4.3.1
+        with:
+          version: ${{ env.QT_VERSION }}
+          host: all_os
+          target: android
+          arch: android_arm64_v8a
+          modules: ${{ env.QT_MODULES }}
+          dir: ${{ runner.temp }}
+          py7zrversion: '==0.22.*'
+          extra: '--base ${{ env.QT_MIRROR }}'
+
+      - name: Build APK
+        env:
+          QT_INSTALL_DIR: ${{ runner.temp }}
+        run: |
+          mkdir -p apk-out
+          deploy/build.sh -t android --abi arm64-v8a
+          cp deploy/build/client/android-build/AmneziaVPN.apk apk-out/AmneziaVPN-arm64.apk
+
+      - name: Upload APK artifact
+        uses: actions/upload-artifact@v7
+        with:
+          name: amnezia-android-apk
+          path: apk-out/AmneziaVPN-arm64.apk
+          retention-days: 7
