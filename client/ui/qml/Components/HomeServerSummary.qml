@@ -10,7 +10,6 @@ ColumnLayout {
     id: root
 
     property bool isIpVisible: false
-    signal toggleIpVisibilityRequested()
 
     property bool expanded: false
     property bool pressed: false
@@ -102,7 +101,6 @@ ColumnLayout {
             leftImageHeight: 15
             rightImageSource: enabled ? (root.expanded ? "qrc:/images/controls/chevron-down.svg" : "qrc:/images/controls/chevron-right.svg") : ""
 
-            onClicked: root.toggleIpVisibilityRequested()
         }
     }
 
