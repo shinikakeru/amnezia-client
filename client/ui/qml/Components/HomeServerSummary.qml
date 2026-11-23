@@ -104,12 +104,6 @@ ColumnLayout {
 
             onClicked: root.toggleIpVisibilityRequested()
         }
-
-        MouseArea {
-            anchors.fill: parent
-            cursorShape: Qt.PointingHandCursor
-            onClicked: root.toggleIpVisibilityRequested()
-        }
     }
 
     NotificationType {
