@@ -24,7 +24,7 @@ PageType {
         const isSelfHosted = root.isSelfHostedDefaultServer
         const hideEnabled = SettingsController.isHideSelfHostedIpEnabled()
         root.isIpVisible = !(isSelfHosted && hideEnabled)
-        console.log("HIDE_IP_DEBUG home isSelfHosted:", isSelfHosted, "hideEnabled:", hideEnabled, "isIpVisible:", root.isIpVisible)
+        
     }
     property var apiAvailableProtocols: []
     property string apiCurrentProtocol: ""
@@ -378,6 +378,8 @@ PageType {
                 anchors.bottom: parent.bottom
                 anchors.topMargin: 12
 
+                isIpVisible: root.isIpVisible
+                
                 onServerSettingsOpened: drawer.close()
             }
         }
