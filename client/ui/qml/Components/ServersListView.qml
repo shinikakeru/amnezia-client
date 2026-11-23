@@ -9,6 +9,8 @@ import "../Controls2"
 ListViewType {
     id: root
 
+    property bool isIpVisible: true
+    
     signal serverSettingsOpened()
 
     leftMargin: 16
@@ -43,13 +45,14 @@ ListViewType {
 
     delegate: ServerListItem {
         readonly property bool subscriptionAlert: isServerFromGatewayApi && (isSubscriptionExpired || isSubscriptionExpiringSoon)
+        readonly property bool hideServerAddress: !root.isIpVisible && !isServerFromGatewayApi
 
         width: root.width - root.leftMargin - root.rightMargin
 
         text: name
         subtitle: subscriptionAlert
                   ? (isSubscriptionExpired ? qsTr("Subscription expired. Please renew") : qsTr("Subscription expiring soon"))
-                  : serverDescription
+                  : (hideServerAddress ? "***.***.***.***" : serverDescription)
         subtitleColor: subscriptionAlert
                        ? (isSubscriptionExpired ? AmneziaStyle.color.statusDestructive : AmneziaStyle.color.statusWarning)
                        : AmneziaStyle.color.textTertiary
