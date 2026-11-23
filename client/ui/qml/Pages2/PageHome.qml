@@ -301,7 +301,6 @@ PageType {
             onExpandRequested: drawer.open()
             onServerInfoRequested: root.openServerInfo()
             onProtocolSelectionRequested: root.openProtocolSelection()
-            onToggleIpVisibilityRequested: root.isIpVisible = !root.isIpVisible
         }
     }
 
@@ -331,7 +330,6 @@ PageType {
 
                 onServerInfoRequested: root.openServerInfo()
                 onProtocolSelectionRequested: root.openProtocolSelection()
-                onToggleIpVisibilityRequested: root.isIpVisible = !root.isIpVisible
             }
 
             ColumnLayout {
